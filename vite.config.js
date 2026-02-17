@@ -1,0 +1,14 @@
+import { resolve } from "path";
+import { defineConfig } from "vite";
+
+export default defineConfig({
+  server: { host: "127.0.0.1" },
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "index.html"),
+        "hello-tone": resolve(__dirname, "katas/hello-tone/index.html"),
+      },
+    },
+  },
+});
