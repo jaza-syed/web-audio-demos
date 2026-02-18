@@ -2,6 +2,7 @@ import { resolve } from "path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
+  base: '/web-audio-demos/',
   server: { host: "127.0.0.1" },
   build: {
     rollupOptions: {
