@@ -8,6 +8,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "index.html"),
         "hello-tone": resolve(__dirname, "katas/hello-tone/index.html"),
+        "oscillator": resolve(__dirname, "katas/oscillator/index.html"),
       },
     },
   },
